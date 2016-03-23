@@ -10,6 +10,7 @@
 		FAC283ED1CA2C8A700A44B8A /* log.h in Headers */ = {isa = PBXBuildFile; fileRef = FAC283EC1CA2C8A700A44B8A /* log.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FAC283F41CA2C8A700A44B8A /* log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC283E91CA2C8A700A44B8A /* log.framework */; };
 		FAC283F91CA2C8A700A44B8A /* logTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC283F81CA2C8A700A44B8A /* logTests.swift */; };
+		FAC284061CA2CE6200A44B8A /* log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC284051CA2CE6200A44B8A /* log.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		FAC283F31CA2C8A700A44B8A /* logTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = logTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC283F81CA2C8A700A44B8A /* logTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logTests.swift; sourceTree = "<group>"; };
 		FAC283FA1CA2C8A700A44B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAC284051CA2CE6200A44B8A /* log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = log.swift; path = log/log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 		FAC283DF1CA2C8A600A44B8A = {
 			isa = PBXGroup;
 			children = (
+				FAC284051CA2CE6200A44B8A /* log.swift */,
 				FAC283EB1CA2C8A700A44B8A /* log */,
 				FAC283F71CA2C8A700A44B8A /* logTests */,
 				FAC283EA1CA2C8A700A44B8A /* Products */,
@@ -194,6 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC284061CA2CE6200A44B8A /* log.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +314,7 @@
 		FAC283FE1CA2C8A700A44B8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +325,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = alibaba.log;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		FAC283FF1CA2C8A700A44B8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
