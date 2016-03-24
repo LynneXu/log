@@ -30,7 +30,7 @@
 		FAC283F31CA2C8A700A44B8A /* logTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = logTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC283F81CA2C8A700A44B8A /* logTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = logTests.swift; sourceTree = "<group>"; };
 		FAC283FA1CA2C8A700A44B8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FAC284051CA2CE6200A44B8A /* log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = log.swift; path = log/log.swift; sourceTree = "<group>"; };
+		FAC284051CA2CE6200A44B8A /* log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = log.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,6 @@
 		FAC283DF1CA2C8A600A44B8A = {
 			isa = PBXGroup;
 			children = (
-				FAC284051CA2CE6200A44B8A /* log.swift */,
 				FAC283EB1CA2C8A700A44B8A /* log */,
 				FAC283F71CA2C8A700A44B8A /* logTests */,
 				FAC283EA1CA2C8A700A44B8A /* Products */,
@@ -74,6 +73,7 @@
 		FAC283EB1CA2C8A700A44B8A /* log */ = {
 			isa = PBXGroup;
 			children = (
+				FAC284051CA2CE6200A44B8A /* log.swift */,
 				FAC283EC1CA2C8A700A44B8A /* log.h */,
 				FAC283EE1CA2C8A700A44B8A /* Info.plist */,
 			);
