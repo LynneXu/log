@@ -8,7 +8,8 @@
 import UIKit
 
 public class Logger {
-    func log(parameters: String) {
+    
+    public func log(parameters: String) {
         
         print("hello world!")
     }
