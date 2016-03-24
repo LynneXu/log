@@ -9,6 +9,10 @@ import UIKit
 
 public class Logger {
     
+    public init() {
+        
+    }
+    
     public func log(parameters: String) {
         
         print("hello world!")
