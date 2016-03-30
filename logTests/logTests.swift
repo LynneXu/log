@@ -15,7 +15,8 @@ class logTests: XCTestCase {
         super.setUp()
         let logger = Logger()
         
-        logger.log("23")
+        logger.info("23")
+        logger.debug("23")
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
